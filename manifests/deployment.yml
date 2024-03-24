@@ -14,10 +14,9 @@ spec:
     spec:
       containers:
         - name: web
-          image: tailspinspacegame27578.azurecr.io
+          image: tailspinspacegame27578.azurecr.io/web
           ports:
           - containerPort: 80
-          imagePullPolicy: Always
 ---
 apiVersion : apps/v1
 kind: Deployment
@@ -35,7 +34,6 @@ spec:
     spec:
       containers:
         - name: leaderboard
-          image: tailspinspacegameprod.azurecr.io/leaderboard
+          image: tailspinspacegame27578.azurecr.io/leaderboard
           ports:
           - containerPort: 80
-          imagePullPolicy: Always
