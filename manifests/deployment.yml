@@ -17,7 +17,7 @@ spec:
           image: tailspinspacegame27578.azurecr.io
           ports:
           - containerPort: 80
-      imagePullPolicy: Always
+          imagePullPolicy: Always
 ---
 apiVersion : apps/v1
 kind: Deployment
@@ -38,4 +38,4 @@ spec:
           image: tailspinspacegameprod.azurecr.io/leaderboard
           ports:
           - containerPort: 80
-      imagePullPolicy: Always
+          imagePullPolicy: Always
